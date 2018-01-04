@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yahya.finalproject.EditDataActivity">
+
+
+    <EditText
+        android:id="@+id/editable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID to delete"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+        <Button
+            android:id="@+id/btnEntryScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entry Screen"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+
+
+    </GridLayout>
+
+
+
+
+</LinearLayout>

@@ -1,6 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.yahya.finalproject"
@@ -9,6 +15,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildToolsVersion "27.0.1"
     }
     buildTypes {
         release {
