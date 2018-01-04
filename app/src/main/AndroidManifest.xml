@@ -20,7 +20,15 @@
         <activity android:name=".ActivityTracking" />
         <activity android:name=".NutritionActivity" />
         <activity android:name=".ThermostatActivity" />
-        <activity android:name=".AutomobileActivity"></activity>
+        <activity android:name=".AutomobileActivity" />
+        <activity
+            android:name=".ListDataActivity"
+            android:label="@string/title_activity_list_data" />
+        <activity
+            android:name=".EditDataActivity"
+            android:label="@string/title_activity_edit_data"></activity>
+        <activity android:name=".ViewListContents"></activity>
+
     </application>
 
 </manifest>

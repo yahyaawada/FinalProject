@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FinalProject</string>
+    <string name="title_activity_thermostat2">ThermostatActivity2</string>
+    <string name="title_activity_thermostat3">ThermostatActivity3</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_list_data">ListDataActivity</string>
+    <string name="title_activity_edit_data">EditDataActivity</string>
 </resources>

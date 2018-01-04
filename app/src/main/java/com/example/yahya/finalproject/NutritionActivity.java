@@ -16,7 +16,7 @@ public class NutritionActivity extends Activity {
         setContentView(R.layout.activity_nutrition);
 
         //Creating an array adapter for the listView
-        ListView lv = (ListView)findViewById(R.id.nutrition_list);
+        ListView lv = (ListView)findViewById(R.id.list_results);
         lv.setAdapter(new ArrayAdapter<String>(this, R.layout.cell_layout, sourceData));
     }
 }

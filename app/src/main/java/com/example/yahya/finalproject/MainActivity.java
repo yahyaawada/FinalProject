@@ -16,8 +16,8 @@ import android.widget.ListView;
 public class MainActivity extends Activity {
 
     int i = 0;
-    String [] sourceData = { "Activity two", "Activity Three",
-            "Activity Four", "Activity Five"};
+    String [] sourceData = { "Activity Tracking", "Nutrition Activity ", "ArrayList Activity (tb removed)",
+            "House Thermostat", "Automobile Activity"};
 
     protected final String NAME = "MainActivity";
 
@@ -63,7 +63,8 @@ public class MainActivity extends Activity {
                         nextPage = new Intent(MainActivity.this, NutritionActivity.class);
                         startActivityForResult(nextPage, 6);
                         break;
-                    case 2:
+                    case 2: // this is just the arraylist activity
+                        // I think we should remove this
                         startActivity(new Intent(MainActivity.this, ArrayListActivity.class));
                         break;
                     case 3://SQL EXAMPLE
