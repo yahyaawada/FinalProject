@@ -7,29 +7,55 @@
     android:orientation="vertical"
     tools:context="com.example.yahya.finalproject.NutritionActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="Assignment:" />
+
+
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/assignment_field"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="Grade:" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/grade_field"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="Comment:" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/comment_field"/>
-    <Button android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Insert" android:id="@+id/insert_button"></Button>
-    <ListView
+        android:id="@+id/cals"
+        android:text="Calories : "/>
+
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/list_results"></ListView>
+        android:layout_height="wrap_content"
+        android:id="@+id/fats"
+        android:text="Fat : "/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/carbo"
+        android:text="Carbohydrates : "/>
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:id="@+id/whatRow"
+        android:text= "Which row would you like to delete? : "
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:text="Add Entry" />
+
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Entry" />
+
+
+    <ListView
+        android:id="@+id/list_results"
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+
+    </ListView>
 </LinearLayout>
