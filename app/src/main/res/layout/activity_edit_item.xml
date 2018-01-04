@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/edit_id"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="ID"
+        android:textColor="#9ACD32"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/edit_date"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edit_id"
+        android:layout_margin="5dp"
+        android:text="TIME"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <EditText
+        android:id="@+id/edit_activity"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edit_date"
+        android:layout_margin="5dp"
+        android:text="ACTIVITY"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <EditText
+        android:id="@+id/edit_duration"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edit_activity"
+        android:layout_margin="5dp"
+        android:text="DURATION"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edit_duration"
+        android:layout_margin="5dp"
+        android:text="COMMENT"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_edit"
+        android:text="@string/update"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_data"
+        android:text="@string/delete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/button_edit"/>
+</RelativeLayout>

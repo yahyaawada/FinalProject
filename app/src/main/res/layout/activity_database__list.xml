@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/id_list"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="ID"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <TextView
+        android:id="@+id/time_list"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/id_list"
+        android:layout_margin="5dp"
+        android:text="TIME"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <TextView
+        android:id="@+id/activity_list"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/time_list"
+        android:layout_margin="5dp"
+        android:text="ACTIVITY"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <TextView
+        android:id="@+id/duration_list"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/activity_list"
+        android:layout_margin="5dp"
+        android:text="DURATION"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <TextView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/duration_list"
+        android:layout_margin="5dp"
+        android:text="COMMENT"
+        android:textSize="6pt"
+        android:textColor="#9ACD32"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/database_list"
+        android:layout_below="@id/id_list"
+        android:background="@color/databaselist">
+    </ListView>
+
+
+</RelativeLayout>

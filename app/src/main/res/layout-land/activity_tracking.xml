@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.yahya.finalproject.Tracking_Activity.ActivityTracking">
-
+    android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -20,60 +18,56 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/toolbar"
-            android:paddingBottom="50dp"
             app:popupTheme="@style/PopupOverlay"
             app:titleTextColor="@color/colorAccent" />
     </android.support.design.widget.AppBarLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="fill_horizontal"
-        android:background="@color/listbackground"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"
-        android:text="@string/log_new_activity"
-        android:textAllCaps="true"
-        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
-        android:textColor="@color/colorAccent"
-        android:textSize="8pt" />
 
     <ListView
         android:id="@+id/tracking_list"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/check_weather"
+        android:layout_alignStart="@+id/view_results"
+        android:layout_below="@id/appbarlayout"
         android:choiceMode="singleChoice"
-        android:paddingBottom="16dp"
-        android:background="@color/listbackground"
         android:listSelector="#FFCDD2"></ListView>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tracking_list"
+        android:layout_weight="2" />
 
     <Button
         android:id="@+id/check_weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/check_weather"
-        android:shadowColor="@color/toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tracking_list" />
+        android:layout_above="@+id/view_results"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:text="Check Weather" />
 
     <Button
         android:id="@+id/view_results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/view_database"
-        android:shadowColor="@color/toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/check_weather" />
+        android:layout_alignEnd="@+id/check_weather"
+        android:layout_alignParentBottom="true"
+        android:text="View Database"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/view_results"
         app:srcCompat="@android:drawable/ic_menu_help" />
 
-</LinearLayout>
+</RelativeLayout>
