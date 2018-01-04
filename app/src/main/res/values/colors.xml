@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="listbackground">#ffff50</color>
+    <color name="databaselist">#c2c2c2</color>
+    <color name="weatherfirst">#f3da66</color>
+    <color name="weathersecond">#f0d141</color>
+    <color name="toolbar">#b5e416</color>
 </resources>

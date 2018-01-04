@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">FinalProject</string>
+    <string name="title_activity_project_toolbar">ProjectToolbar</string>
+    <string name="title"> Final Project:</string>
+    <string name="info">Created by: \nYahya Awada \nSam Jahani  \nJason Nguyen \nPhilip Tharakan</string>
+    <string name="toolbar_title"> Tracking Activity</string>
+    <string name="log_new_activity">Log new activity:</string>
+    <string name="check_weather">CHECK WEATHER</string>
+    <string name="view_database">VIEW DATABASE</string>
+    <string name="dialog_confirm">Are you sure you want to continue?</string>
+    <string name="add_activity">Add activity</string>
+    <string name="activity">Activity</string>
+    <string name="duration">Duration(min)</string>
+    <string name="comment">Comment</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
 </resources>

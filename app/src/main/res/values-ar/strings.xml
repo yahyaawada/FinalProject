@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="title_activity_project_toolbar">ProjectToolbar</string>
+    <string name="title"> Final Project:</string>
+    <string name="info">Created by: \nYahya Awada \nSam Jahani  \nJason Nguyen \nPhilip Tharakan</string>
+    <string name="toolbar_title"> تتبع النشاط</string>
+    <string name="log_new_activity">تسجيل نشاط جديد:</string>
+    <string name="check_weather">تحقق الطقس</string>
+    <string name="view_database">عرض قاعدة البيانات</string>
+    <string name="dialog_confirm">هل تريد المتابعة؟</string>
+    <string name="add_activity">إضافة نشاط</string>
+    <string name="activity">نشاط</string>
+    <string name="duration">المدة الزمنية</string>
+    <string name="comment">تعليق</string>
+    <string name="update">تحديث</string>
+    <string name="delete">حذف</string>
+</resources>
