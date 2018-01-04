@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yahya.finalproject.Tracking_Activity.WeatherForecast">
+
+    <ImageView
+        android:id="@+id/weather_image"
+        android:layout_width="378dp"
+        android:layout_height="200dp"
+        android:src="@android:drawable/ic_menu_zoom"
+        android:paddingBottom="20dp"
+        android:background="@color/listbackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- current temp tag-->
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Current Temp"
+        android:textSize="10pt"
+        android:background="@color/weatherfirst"
+        app:layout_constraintLeft_toRightOf="@+id/current_temp"
+        app:layout_constraintTop_toBottomOf="@+id/weather_image" />
+
+    <!-- maximum temp tag-->
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Max Temp"
+        android:textSize="10pt"
+        android:background="@color/weathersecond"
+        app:layout_constraintLeft_toRightOf="@+id/max_temp"
+        app:layout_constraintTop_toBottomOf="@+id/current" />
+
+    <!-- minimum temp tag-->
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Min Temp"
+        android:textSize="10pt"
+        android:background="@color/weatherfirst"
+        app:layout_constraintLeft_toRightOf="@+id/min_temp"
+        app:layout_constraintTop_toBottomOf="@+id/max" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="wind speed"
+        android:textSize="10pt"
+        android:background="@color/weathersecond"
+        app:layout_constraintLeft_toRightOf="@+id/wind_speed"
+        app:layout_constraintTop_toBottomOf="@+id/min" />
+
+    <TextView
+        android:id="@+id/windCondition"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="wind condition"
+        android:textSize="8pt"
+        android:background="@color/weatherfirst"
+        app:layout_constraintLeft_toRightOf="@+id/wind_condition"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeed" />
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@+id/weather_image"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wind_condition" />
+
+    <!--current temp edit box-->
+    <EditText
+        android:id="@+id/current_temp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:editable="false"
+        android:text="Current Temp:  "
+        android:textSize="8pt"
+        android:background="@color/weatherfirst"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_image" />
+
+    <!--maximum temp edit box-->
+    <EditText
+        android:id="@+id/max_temp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:editable="false"
+        android:text="Max: "
+        android:textSize="8pt"
+        android:background="@color/weathersecond"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_temp" />
+
+    <!--minimum temp edit box-->
+    <EditText
+        android:id="@+id/min_temp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:editable="false"
+        android:text="Min: "
+        android:textSize="8pt"
+        android:background="@color/weatherfirst"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_temp" />
+
+    <EditText
+        android:id="@+id/wind_speed"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:editable="false"
+        android:text="Wind speed(Km/h): "
+        android:textSize="8pt"
+        android:background="@color/weathersecond"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_temp" />
+
+    <EditText
+        android:id="@+id/wind_condition"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:editable="false"
+        android:text="Wind condition: "
+        android:textSize="8pt"
+        android:background="@color/weatherfirst"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wind_speed" />
+
+</android.support.constraint.ConstraintLayout>
