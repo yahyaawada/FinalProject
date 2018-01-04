@@ -12,7 +12,7 @@
         android:id="@+id/editable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:hint="Enter ID to delete"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="110dp" />
 
@@ -35,13 +35,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delete"
-            tools:layout_editor_absoluteX="219dp"
-            tools:layout_editor_absoluteY="243dp" />
-        <Button
-            android:id="@+id/btnlistViewBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="List"
             tools:layout_editor_absoluteX="219dp"
             tools:layout_editor_absoluteY="243dp" />
 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yahya.finalproject.ProjectToolbar">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/project_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimaryDark"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/projectTitle"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:background="@color/colorAccent"
+        android:textAllCaps="true"
+        android:textSize="20pt"
+        android:text="@string/title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:text="@string/info"
+        android:textAllCaps="true"
+        android:textSize="12pt"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/info" />
+
+
+</LinearLayout>

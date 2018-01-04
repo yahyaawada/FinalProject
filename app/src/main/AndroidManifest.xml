@@ -2,33 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yahya.finalproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Tracking_Activity.ActivityTracking" />
+        <activity android:name=".NutritionActivity" />
+        <activity android:name=".ThermostatActivity" />
+        <activity android:name=".AutomobileActivity" />
+        <activity android:name=".Tracking_Activity.detail_tracking" />
+        <activity android:name=".Tracking_Activity.WeatherForecast" />
+        <activity
+            android:name=".ProjectToolbar"
+            android:label="@string/title_activity_project_toolbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArrayListActivity" />
-        <activity android:name=".ActivityTracking" />
-        <activity android:name=".NutritionActivity" />
-        <activity android:name=".ThermostatActivity" />
-        <activity android:name=".AutomobileActivity" />
-        <activity
-            android:name=".ListDataActivity"
-            android:label="@string/title_activity_list_data" />
-        <activity
-            android:name=".EditDataActivity"
-            android:label="@string/title_activity_edit_data"></activity>
-        <activity android:name=".ViewListContents"></activity>
-
+        <activity android:name=".Tracking_Activity.Database_List" />
+        <activity android:name=".Tracking_Activity.EditItem"></activity>
     </application>
 
 </manifest>

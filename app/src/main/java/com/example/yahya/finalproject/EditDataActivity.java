@@ -27,7 +27,7 @@ public class EditDataActivity extends Activity {
         setContentView(R.layout.edit_data_layout);
         btnSave = (Button) findViewById(R.id.btnSave);
         btnDelete = (Button) findViewById(R.id.btnDelete);
-        btnList = (Button) findViewById(R.id.btnlistViewBack);
+      //  btnList = (Button) findViewById(R.id.btnlistViewBack);
         btnEntryScreen = (Button) findViewById(R.id.btnEntryScreen);
         editable_item = (EditText) findViewById(R.id.editable);
 
@@ -70,18 +70,18 @@ public class EditDataActivity extends Activity {
             }
         });
 
-        btnList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent editScreenIntent = new Intent(EditDataActivity.this, ListDataActivity.class);
-                startActivity(editScreenIntent);
-            }
-        });
+//        btnList.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent editScreenIntent = new Intent(EditDataActivity.this, ListDataActivity.class);
+//                startActivity(editScreenIntent);
+//            }
+//        });
 
         btnEntryScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent editScreenIntent = new Intent(EditDataActivity.this, ThermostatActivity.class);
+                Intent editScreenIntent = new Intent(EditDataActivity.this, ProjectToolbar.class);
                 startActivity(editScreenIntent);
             }
         });

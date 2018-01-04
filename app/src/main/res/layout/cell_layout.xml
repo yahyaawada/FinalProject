@@ -5,5 +5,5 @@
     android:id="@+id/textPos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="right"
-    android:textSize="30sp"></TextView>
+    android:gravity="left"
+    android:textSize="20sp"></TextView>
