@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projet Final</string>
+
+    <!-- Automobile Activity Strings -->
+    <string name="price_label">Prix($):</string>
+    <string name="litres_label">Litres(L):</string>
+    <string name="kilometers_label">Kilomètre(km):</string>
+    <string name="entry_label">Entrée</string>
+    <string name="add_button">Ajouter Entrée</string>
+    <string name="delete_button">Supprimer l\'entrée</string>
+    <string name="view_button">Afficher les Entrées</string>
+    <string name="update_button">Modifier une Entrée</string>
+    <string name="view_list_button">Afficher la Liste</string>
+
+    <!-- Auto listview Strings -->
+    <string name="price_list_label">Prix($)</string>
+    <string name="gas_filled_label">Gas Rempli(L)</string>
+    <string name="distance_label">Distance (km)</string>
+
+
+</resources>

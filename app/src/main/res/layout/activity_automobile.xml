@@ -7,29 +7,89 @@
     android:orientation="vertical"
     tools:context="com.example.yahya.finalproject.AutomobileActivity">
 
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="AutomobileActivity:" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/assignment_field"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="AutomobileActivity:" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/grade_field"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:text="AutomobileActivity:" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:id="@+id/comment_field"/>
-    <Button android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AutomobileActivity" android:id="@+id/insert_button"></Button>
+        android:id="@+id/price_label"
+        android:text="Price($):" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_field" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/litres_label"
+        android:text="Litres(L):" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/litres_field"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/kilometers_label"
+        android:text="Kilometers(km):" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/km_field"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entry_label"
+        android:text="Entry: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_field"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Entry"
+            android:id="@+id/add_button"
+            android:layout_weight="1"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Entry"
+            android:id="@+id/delete_button"
+            android:layout_weight="1"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Entries"
+            android:id="@+id/view_button"
+            android:layout_weight="1"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Entry"
+            android:id="@+id/update_button"
+            android:layout_weight="1"></Button>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View List"
+        android:id="@+id/view_list_button"/>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/automobile_list"></ListView>
+        android:scrollbars="vertical"
+        android:id="@+id/gas_list"></ListView>
 </LinearLayout>

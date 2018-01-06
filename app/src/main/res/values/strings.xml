@@ -14,4 +14,20 @@
     <string name="comment">Comment</string>
     <string name="update">UPDATE</string>
     <string name="delete">DELETE</string>
+
+    <!-- Automobile Activity Strings -->
+    <string name="price_label">Price($): </string>
+    <string name="litres_label">Litres(L): </string>
+    <string name="kilometers_label">Kilometers(km): </string>
+    <string name="entry_label">Entry</string>
+    <string name="add_button">Add Entry</string>
+    <string name="delete_button">Delete Entry</string>
+    <string name="view_button">View Entries</string>
+    <string name="update_button">Update Entry</string>
+    <string name="view_list_button">View List</string>
+
+    <!--AutoViewList Activity Strings -->
+    <string name="price_list_label">Price($)</string>
+    <string name="gas_filled_label">Gas Filled(L)</string>
+    <string name="distance_label">Distance(km)</string>
 </resources>

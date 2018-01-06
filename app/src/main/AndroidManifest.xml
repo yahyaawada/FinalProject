@@ -27,7 +27,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Tracking_Activity.Database_List" />
-        <activity android:name=".Tracking_Activity.EditItem"></activity>
+        <activity android:name=".Tracking_Activity.EditItem" />
+        <activity android:name=".ViewListContents" />
+        <activity android:name=".EditDataActivity" />
+        <activity android:name=".AutoViewListContents"></activity>
     </application>
 
 </manifest>

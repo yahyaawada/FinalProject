@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yahya.finalproject.AutoViewListContents">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="99">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_weight="33"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/price_list_label"
+            android:text="Price($)"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_weight="33"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gas_filled_label"
+            android:text="Gas Filled(L)"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_weight="33"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/distance_label"
+            android:text="Distance (km)"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView" />
+
+</LinearLayout>
